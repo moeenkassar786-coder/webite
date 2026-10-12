@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0b0d12" />
+  <meta name="description" content="Moeen is an Electrical Engineering polytechnic student at Jamia Millia Islamia aspiring to become a Full Stack Developer. Explore learning projects and connect." />
+  <meta name="author" content="Moeen" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Moeen | Future Full Stack Developer" />
+  <meta property="og:description" content="Electrical Engineering student learning to build thoughtful, responsive web experiences." />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=85" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="color-scheme" content="dark light" />
+  <title>Moeen | Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <canvas id="particle-canvas" aria-hidden="true"></canvas>
+
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Moeen home">MOEEN<span>.</span></a>
+    <button class="menu-toggle" id="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="nav-links">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav-links" id="nav-links" aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch color theme" title="Switch color theme">
+        <span id="theme-icon" aria-hidden="true">☼</span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section-wrap" id="home">
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><span class="status-dot"></span> ELECTRICAL ENGINEERING STUDENT</div>
+        <p class="hero-kicker">Hello, world! I'm</p>
+        <h1>Moeen<span class="accent">.</span><br /><span class="gradient-text">Future Full Stack Developer</span></h1>
+        <p class="hero-description">
+          I’m studying Electrical Engineering at Jamia Millia Islamia and learning to build
+          modern, responsive, and useful digital experiences for the web.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">Explore my work <span aria-hidden="true">↗</span></a>
+          <a class="button button-secondary" href="#contact">Let’s connect</a>
+        </div>
+        <div class="hero-socials">
+          <a href="https://github.com/moeenkassar786-coder" target="_blank" rel="noopener noreferrer">GitHub <span>↗</span></a>
+          <a href="mailto:moeenkassar786@gmail.com">Email <span>↗</span></a>
+          <span class="social-divider"></span>
+          <span class="availability"><span class="status-dot"></span> Open to learning & collaboration</span>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal" aria-label="Developer workspace image and code illustration">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="profile-card">
+          <div class="profile-card-top"><span class="window-dots"><i></i><i></i><i></i></span><span>moeen.dev</span><span class="card-menu">•••</span></div>
+          <div class="code-window">
+            <p><span class="code-muted">01</span> <span class="code-purple">const</span> <span class="code-cyan">developer</span> = {</p>
+            <p><span class="code-muted">02</span> &nbsp; name: <span class="code-green">'Moeen'</span>,</p>
+            <p><span class="code-muted">03</span> &nbsp; focus: <span class="code-green">'Web Development'</span>,</p>
+            <p><span class="code-muted">04</span> &nbsp; mindset: <span class="code-green">'Always learning'</span>,</p>
+            <p><span class="code-muted">05</span> &nbsp; building: <span class="code-green">'Ideas into reality'</span></p>
+            <p><span class="code-muted">06</span> };</p>
+            <div class="terminal-line"><span class="terminal-prompt">➜</span> Ready to build<span class="blinking-cursor">_</span></div>
+          </div>
+          <div class="profile-card-footer"><span><i class="footer-dot"></i> Learning every day</span><span>v1.0</span></div>
+        </div>
+        <div class="floating-chip chip-html"><span class="chip-icon orange">5</span> HTML</div>
+        <div class="floating-chip chip-css"><span class="chip-icon blue">✳</span> CSS</div>
+        <div class="floating-chip chip-js"><span class="chip-icon yellow">JS</span> JavaScript</div>
+        <div class="visual-caption"><span class="caption-line"></span> CURIOUS MIND. CREATIVE BUILDER.</div>
+      </div>
+      <a class="scroll-indicator" href="#about"><span class="scroll-mouse"></span><span>Scroll to explore</span></a>
+    </section>
+
+    <section class="section-wrap section-block" id="about">
+      <div class="section-heading reveal"><p class="section-label">01 / ABOUT ME</p><h2>Learning today.<br /><span class="muted-heading">Building for tomorrow.</span></h2></div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p class="large-copy">I’m a student with a growing passion for <span class="text-highlight">web development</span>, thoughtful design, and solving problems through technology.</p>
+          <p>My academic journey is in Electrical Engineering, while my personal learning journey is taking me into the world of the web. I’m working toward becoming a Full Stack Developer by learning the fundamentals, building projects, and improving a little every day.</p>
+          <p>This portfolio is my starting point — a place to share what I learn, what I build, and where I want to go next.</p>
+          <a class="text-link" href="#contact">Have an idea? Let’s talk <span>↗</span></a>
+        </div>
+        <div class="about-facts reveal">
+          <div class="fact-card"><span class="fact-icon">⌘</span><div><h3>Learning by building</h3><p>Turning concepts into hands-on projects.</p></div></div>
+          <div class="fact-card"><span class="fact-icon">◇</span><div><h3>Design curious</h3><p>Interested in clean UI and great user experiences.</p></div></div>
+          <div class="fact-card"><span class="fact-icon">↗</span><div><h3>Growth mindset</h3><p>Always exploring, practicing, and improving.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-wrap section-block" id="skills">
+      <div class="section-heading reveal"><p class="section-label">02 / SKILLS & LEARNING</p><h2>The tools I’m learning<span class="accent">.</span></h2><p class="section-intro">These are learning areas, not claims of professional expertise. Update each item as your skills grow.</p></div>
+      <div class="skills-grid">
+        <article class="skill-card reveal"><div class="skill-card-heading"><span class="skill-symbol html-symbol">5</span><span class="skill-level">FOUNDATIONS</span></div><h3>HTML</h3><p>Semantic structure and accessible page content.</p><div class="skill-track"><span style="width:72%"></span></div></article>
+        <article class="skill-card reveal"><div class="skill-card-heading"><span class="skill-symbol css-symbol">✳</span><span class="skill-level">FOUNDATIONS</span></div><h3>CSS</h3><p>Layouts, responsive design, and visual styling.</p><div class="skill-track"><span style="width:62%"></span></div></article>
+        <article class="skill-card reveal"><div class="skill-card-heading"><span class="skill-symbol js-symbol">JS</span><span class="skill-level">LEARNING</span></div><h3>JavaScript</h3><p>Interactions, logic, and dynamic web experiences.</p><div class="skill-track"><span style="width:38%"></span></div></article>
+        <article class="skill-card reveal"><div class="skill-card-heading"><span class="skill-symbol react-symbol">⚛</span><span class="skill-level">NEXT GOAL</span></div><h3>React</h3><p>Reusable components and interactive interfaces.</p><div class="skill-track"><span style="width:15%"></span></div></article>
+        <article class="skill-card reveal"><div class="skill-card-heading"><span class="skill-symbol git-symbol">⌘</span><span class="skill-level">NEXT GOAL</span></div><h3>Git & GitHub</h3><p>Version control and sharing project code.</p><div class="skill-track"><span style="width:20%"></span></div></article>
+        <article class="skill-card reveal"><div class="skill-card-heading"><span class="skill-symbol backend-symbol">{ }</span><span class="skill-level">FUTURE GOAL</span></div><h3>Backend & Database</h3><p>Learning server-side development and data storage.</p><div class="skill-track"><span style="width:8%"></span></div></article>
+      </div>
+      <p class="small-note">Tip: adjust the labels and progress bars to reflect your real current level. These percentages are only visual placeholders.</p>
+    </section>
+
+    <section class="section-wrap section-block" id="projects">
+      <div class="section-heading project-heading reveal"><div><p class="section-label">03 / MY PROJECT LAB</p><h2>Projects that bring ideas to life<span class="accent">.</span></h2><p class="projects-intro">Explore my builds, search by name or technology, and download source code when it’s available.</p></div><span class="project-count" id="project-count">03 PROJECTS</span></div>
+      <div class="project-tools reveal"><label class="project-search-wrap" for="project-search"><span aria-hidden="true">⌕</span><input id="project-search" type="search" placeholder="Search projects or tech (e.g. JavaScript)..." autocomplete="off" /></label><div class="project-filters" role="group" aria-label="Filter projects"><button class="project-filter active" type="button" data-filter="all" aria-pressed="true">All projects</button><button class="project-filter" type="button" data-filter="built" aria-pressed="false">Built</button><button class="project-filter" type="button" data-filter="concept" aria-pressed="false">Concepts</button></div></div>
+      <div class="projects-grid" id="projects-grid">
+        <article class="project-card project-featured reveal" data-status="built" data-search="personal portfolio html css javascript responsive animation">
+          <div class="project-preview preview-portfolio"><div class="mini-browser"><div class="mini-browser-bar"><i></i><i></i><i></i></div><div class="mini-browser-content"><span class="mini-overline">HELLO, I'M MOEEN</span><div class="mini-title">Ideas into<br /><b>digital experiences.</b></div><div class="mini-button"></div><div class="mini-shapes"><i></i><i></i><i></i></div></div></div><span class="preview-tag">01 / PERSONAL BRAND</span></div>
+          <div class="project-info"><div class="project-meta"><span>PERSONAL WEBSITE</span><span>01</span></div><h3>Personal Portfolio</h3><p>A responsive space to introduce myself, share my learning journey, and showcase future projects.</p><div class="tag-list"><span>HTML</span><span>CSS</span><span>JavaScript</span></div><div class="project-links"><a href="#home" class="project-link">Preview this page <span>↗</span></a><a href="https://github.com/moeenkassar786-coder" target="_blank" rel="noopener noreferrer" class="project-link">Source / GitHub <span>↗</span></a></div></div>
+        </article>
+        <article class="project-card reveal" data-status="concept" data-search="focus task manager productivity javascript css local storage">
+          <div class="project-preview preview-task"><div class="task-ui"><div class="task-ui-head"><span>Today’s focus</span><span class="task-plus">+</span></div><div class="task-progress"><span></span></div><div class="task-row"><i class="checked">✓</i><span>Practice HTML</span></div><div class="task-row"><i></i><span>Build a small project</span></div><div class="task-row"><i></i><span>Review JavaScript</span></div><div class="task-bottom">3 tasks · demo concept</div></div><span class="preview-tag">02 / PRODUCTIVITY</span></div>
+          <div class="project-info"><div class="project-meta"><span>PROJECT IDEA</span><span>02</span></div><h3>Focus Task Manager</h3><p>A simple task manager concept to practice UI, event handling, and saving tasks locally.</p><div class="tag-list"><span>JavaScript</span><span>CSS</span><span>Local Storage</span></div><div class="project-links"><a href="#contact" class="project-link">Discuss the idea <span>↗</span></a></div></div>
+        </article>
+        <article class="project-card reveal" data-status="concept" data-search="weather dashboard api javascript responsive ui">
+          <div class="project-preview preview-weather"><div class="weather-ui"><div class="weather-location">YOUR CITY <span>⌖</span></div><div class="weather-sun">☀</div><div class="weather-temp">28°</div><div class="weather-desc">A bright, clear day</div><div class="weather-stats"><span>HUMIDITY <b>--</b></span><span>WIND <b>--</b></span></div></div><span class="preview-tag">03 / API PRACTICE</span></div>
+          <div class="project-info"><div class="project-meta"><span>PROJECT IDEA</span><span>03</span></div><h3>Weather Dashboard</h3><p>A future project for practicing API requests, loading states, and presenting data clearly.</p><div class="tag-list"><span>JavaScript</span><span>API</span><span>Responsive UI</span></div><div class="project-links"><a href="#contact" class="project-link">Discuss the idea <span>↗</span></a></div></div>
+        </article>
+      </div>
+      <div class="projects-empty" id="projects-empty" hidden><strong>No projects found.</strong><span>Try another search or choose “All projects”.</span></div><div class="add-project-panel reveal"><button class="add-project-icon" id="add-project-button" type="button" aria-label="Add project files" title="Choose project files">＋</button><input id="project-file-input" type="file" multiple hidden accept=".html,.css,.js,.jsx,.ts,.tsx,.py,.java,.c,.cpp,.json,.md,.txt,.pdf,.png,.jpg,.jpeg,.webp,.zip,.gif,.svg,.mp4,.webm" /><div class="add-project-copy"><h3>Have a new project to showcase?</h3><p>Tap the + icon to choose project files from your computer and add a project card to this preview.</p><p class="project-upload-note">Files added this way stay in this browser preview only. To publish them for every visitor, upload them to your repository and redeploy.</p></div><a class="button button-secondary" href="https://github.com/moeenkassar786-coder" target="_blank" rel="noopener noreferrer">Manage projects on GitHub <span>↗</span></a></div><p class="small-note">The task manager and weather dashboard are concepts, not finished apps. Add download links only for real project files you have uploaded.</p>
+    </section>
+
+    <section class="section-wrap section-block" id="education">
+      <div class="section-heading reveal"><p class="section-label">04 / EDUCATION & JOURNEY</p><h2>My learning path<span class="accent">.</span></h2></div>
+      <div class="timeline reveal">
+        <div class="timeline-item"><div class="timeline-marker"></div><div class="timeline-date">CURRENT</div><div class="timeline-content"><h3>Polytechnic — Electrical Engineering</h3><p class="timeline-place">Jamia Millia Islamia</p><p>Building my engineering foundation while independently learning web development. Add your exact year/semester and dates here if you want.</p><span class="timeline-status">In progress</span></div></div>
+        <div class="timeline-item"><div class="timeline-marker"></div><div class="timeline-date">NEXT MILESTONE</div><div class="timeline-content"><h3>Frontend Development</h3><p class="timeline-place">HTML · CSS · JavaScript · React</p><p>Strengthen fundamentals, build accessible interfaces, and publish projects with clean code.</p><span class="timeline-status">Learning roadmap</span></div></div>
+        <div class="timeline-item"><div class="timeline-marker"></div><div class="timeline-date">FUTURE GOAL</div><div class="timeline-content"><h3>Full Stack Development</h3><p class="timeline-place">Frontend · Backend · Database</p><p>Learn how to build, test, secure, and deploy complete web applications.</p><span class="timeline-status">Goal</span></div></div>
+      </div>
+    </section>
+
+    <section class="contact-section section-wrap" id="contact">
+      <div class="contact-panel reveal">
+        <div class="contact-orb"></div>
+        <p class="section-label">05 / CONTACT</p>
+        <h2>Have a good idea?<br /><span class="gradient-text">Let’s build it.</span></h2>
+        <p class="contact-description">I’m happy to connect with fellow learners, developers, and people who enjoy building useful things.</p>
+        <div class="contact-actions">
+          <a class="button button-primary contact-button" href="mailto:moeenkassar786@gmail.com?subject=Hello%20Moeen">Email me <span>↗</span></a>
+          <a class="button button-secondary contact-button" href="https://github.com/moeenkassar786-coder" target="_blank" rel="noopener noreferrer">Visit GitHub <span>↗</span></a>
+        </div>
+        <p class="email-hint">moeenkassar786@gmail.com</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer section-wrap">
+    <a class="brand" href="#home">MOEEN<span>.</span></a>
+    <p>Designed with curiosity. Built to keep improving.</p>
+    <a class="back-top" id="back-top" href="#home" aria-label="Back to top" title="Back to top">↑</a>
+    <span class="copyright">© <span id="year"></span> Moeen</span>
+  </footer>
+</body>
+</html>
